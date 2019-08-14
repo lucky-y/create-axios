@@ -14,14 +14,10 @@ export default {
     }
   },
   created () {
-    apiAddress({type: 0, code: 1}).then( res => {
-      this.$Toast({
-        message: res
-      })
+    apiAddress.two({type: 0, code: 1}).then( res => {
+      this.$toast(res)
     }).catch(
-      this.$Toast({
-        message: '请求失败'
-      })
+      this.$toast('请求失败')
     )
   }
 }

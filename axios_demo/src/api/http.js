@@ -8,7 +8,7 @@ Axios.defaults.timeout = 10000
 Axios.defaults.headers.post['content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8'
 
 if (process.env.NODE_ENV == 'development') {
-	Axios.defaults.baseURL = 'localhost:8080'}
+	Axios.defaults.baseURL = ''}
 else if (process.env.NODE_ENV == 'testing') {
 	Axios.defaults.baseURL = 'https://www.ceshi.com'
 }

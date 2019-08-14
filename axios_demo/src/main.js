@@ -6,7 +6,7 @@ import router from './router'
 import { Toast } from 'vant'
 
 Vue.config.productionTip = false
-Vue.prototype.$Toast = Toast
+Vue.prototype.$toast = Toast
 
 /* eslint-disable no-new */
 new Vue({
